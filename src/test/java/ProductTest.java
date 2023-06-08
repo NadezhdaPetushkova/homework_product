@@ -25,7 +25,7 @@ public class ProductTest {
 
     @Test
     public void shouldAddNewProduct() {
-        Product newProduct = new Product(7, "New Product", 5000);
+        Product newProduct = new Product(7, "New Product", 5_000);
         repo.add(newProduct);
 
         Product[] expected = {product1, product2, product3, product4, product5, product6, newProduct};
